@@ -1,6 +1,5 @@
 package com.edatalia.signplysdk.data
 
-import android.net.Uri
 import android.os.Parcelable
 import com.edatalia.signplysdk.data.SIGNplySDKConstants.DEFAULT_CUSTOM_TEXT_FONT_SIZE
 import com.edatalia.signplysdk.data.SIGNplySDKConstants.DEFAULT_FIXED_WIDGET_HEIGHT
@@ -25,7 +24,7 @@ data class SignplySDKParams(
 
 @Parcelize
 data class SignplySDKFileProperties(
-    var uri: Uri,
+    var uriPath: String,
     var signedName: String = DEFAULT_NAME_SIGNED_DOCUMENT,
     var isShareable: Boolean = false,
     var password: String? = null,
